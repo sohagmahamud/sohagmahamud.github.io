@@ -3,17 +3,17 @@
 
 I'm currently learning some coolest technologies. Some of which I will be posting as blog post.
 
-### aws services introduction blog series
+### - aws services introduction blog series
 - first post
 
-### Serverless Blog Series
+### - Serverless Blog Series
 - first post
 
-### C programming blog series
+### - C programming blog series
 - first post
 
-### Python programming blog series
+### - Python programming blog series
 - first post
 
-### Go programming blog series
+### - Go programming blog series
 - first post
