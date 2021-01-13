@@ -13,7 +13,7 @@ I'm currently learning some coolest technologies. Some of which I will be postin
 - first post
 
 ### Python programming blog series
-1.
+- first post
 
 ### Go programming blog series
-1.
+- first post
