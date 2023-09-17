@@ -20,26 +20,23 @@ I'm **Md. Mahamudur Rahman Sohag**, also known as **Sohag Mahamud**. Welcome to 
 
 ### GeoInsight
 GeoInsight: Transforming Earth Science with HLS Geospatial FM. Leverage AI for disaster response and environmental monitoring. Join us in reshaping GeoAI for a resilient world.
-
 [GeoInsight Repository](https://github.com/sohagmahamud/GeoInsight)
 
 ### DisasterAid
 
 **DisasterAid** is a disaster recovery operations and real-time environmental monitoring system. It leverages foundation models and GeoSpatial data from NASA low orbital satellites.
-
 [DisasterAid Repository](https://github.com/sohagmahamud/disaster-aid)
 
 ### CreatiGenius
 
 **CreatiGenius** is a generative AI-based multimodal creative platform that empowers your creative universe.
-
 [CreatiGenius Repository](https://github.com/sohagmahamud/CreatiGenius)
 
 ### DeepR
 
 **DeepR** is a Recommender System designed to enhance your online experiences by recommending content tailored to your preferences.
-
-[DeepR Repository](https://github.com/sohagmahamud/DeepR)
+[DeepR
+Repository](https://github.com/sohagmahamud/DeepR)
 
 ---
 
