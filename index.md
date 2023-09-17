@@ -15,8 +15,13 @@ I'm **Md. Mahamudur Rahman Sohag**, also known as **Sohag Mahamud**. Welcome to 
 ### CloudNinja
 
 **CloudNinja** is a Community Management Application designed to streamline community engagement and collaboration.
-
 [CloudNinja Repository](https://github.com/cloudcampbd/cloudninja)
+
+
+### GeoInsight
+GeoInsight: Transforming Earth Science with HLS Geospatial FM. Leverage AI for disaster response and environmental monitoring. Join us in reshaping GeoAI for a resilient world.
+
+[GeoInsight Repository](https://github.com/sohagmahamud/GeoInsight)
 
 ### DisasterAid
 
