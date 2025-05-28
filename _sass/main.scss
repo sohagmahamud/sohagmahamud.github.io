@@ -1,0 +1,155 @@
+// Variables
+$primary-color: #2563eb;
+$secondary-color: #3b82f6;
+$background-color: #f8fafc;
+$text-color: #1f2937;
+$card-background: #ffffff;
+$border-radius: 8px;
+$spacing: 1rem;
+
+// Base styles
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing;
+}
+
+.site-header {
+  background-color: $card-background;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: $spacing;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: $spacing;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: $text-color;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: $primary-color;
+}
+
+// Hero sections
+.hero, .research-hero, .projects-hero {
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  border-radius: $border-radius;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+// Cards
+.project-card, .research-card, .publication-card {
+  background: $card-background;
+  border-radius: $border-radius;
+  padding: $spacing;
+  margin-bottom: $spacing;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.project-card:hover, .research-card:hover, .publication-card:hover {
+  transform: translateY(-2px);
+}
+
+// Grids
+.project-grid, .research-grid, .publication-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: $spacing;
+}
+
+// Buttons
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.button.primary {
+  background-color: $primary-color;
+  color: white;
+}
+
+.button.secondary {
+  background-color: transparent;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+// Footer
+.site-footer {
+  background-color: $card-background;
+  padding: $spacing;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  margin-bottom: $spacing;
+}
+
+.footer-social a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: $text-color;
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hero-content {
+    padding: 0 $spacing;
+  }
+  
+  .project-grid, .research-grid, .publication-grid {
+    grid-template-columns: 1fr;
+  }
+}
