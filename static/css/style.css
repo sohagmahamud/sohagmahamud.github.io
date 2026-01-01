@@ -7,26 +7,26 @@
     --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
     --success-gradient: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-    
+
     --primary-color: #667eea;
     --secondary-color: #764ba2;
     --accent-color: #4facfe;
     --success-color: #43e97b;
-    
+
     --bg-primary: #0a0e27;
     --bg-secondary: #151a35;
     --bg-tertiary: #1e2442;
     --bg-card: rgba(30, 36, 66, 0.6);
     --bg-card-hover: rgba(30, 36, 66, 0.8);
-    
+
     --text-primary: #ffffff;
     --text-secondary: #b8c1ec;
     --text-muted: #8892b8;
-    
+
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    
+
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -35,20 +35,20 @@
     --spacing-xl: 3rem;
     --spacing-2xl: 4rem;
     --spacing-3xl: 6rem;
-    
+
     /* Border Radius */
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 16px;
     --radius-xl: 24px;
     --radius-full: 9999px;
-    
+
     /* Shadows */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
     --shadow-glow: 0 0 20px rgba(102, 126, 234, 0.3);
-    
+
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
@@ -593,6 +593,89 @@ section {
 }
 
 /* ========================================
+   Speaking Section
+   ======================================== */
+.speaking {
+    background: var(--bg-secondary);
+}
+
+.speaking-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.speaking-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.speaking-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: var(--primary-gradient);
+    opacity: 0.05;
+    border-radius: 0 0 0 100%;
+}
+
+.speaking-card:hover {
+    background: var(--bg-card-hover);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-glow);
+}
+
+.speaking-type {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--accent-gradient);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-md);
+    color: var(--bg-primary);
+}
+
+.speaking-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-primary);
+}
+
+.speaking-topic {
+    font-size: 1.125rem;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-md);
+    font-weight: 500;
+}
+
+.speaking-meta {
+    display: flex;
+    gap: var(--spacing-md);
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.speaking-meta span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* ========================================
    Skills Section
    ======================================== */
 .skills {
@@ -681,6 +764,12 @@ section {
     border-radius: var(--radius-full);
     width: 0;
     transition: width 1s ease;
+    box-shadow: 0 0 10px rgba(79, 172, 254, 0.5);
+}
+
+.skill-category:nth-child(4) .skill-progress {
+    background: var(--success-gradient);
+    box-shadow: 0 0 10px rgba(67, 233, 123, 0.5);
 }
 
 .skill-progress.animated {
@@ -1078,6 +1167,7 @@ section {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1085,27 +1175,36 @@ section {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
 }
 
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateX(-50%) translateY(0);
     }
+
     50% {
         transform: translateX(-50%) translateY(-10px);
     }
 }
 
 @keyframes blink {
-    0%, 100% {
+
+    0%,
+    100% {
         border-color: var(--accent-color);
     }
+
     50% {
         border-color: transparent;
     }
@@ -1118,11 +1217,11 @@ section {
     html {
         font-size: 14px;
     }
-    
+
     .mobile-menu-toggle {
         display: flex;
     }
-    
+
     .nav-links {
         position: fixed;
         top: 70px;
@@ -1138,55 +1237,55 @@ section {
         transition: all var(--transition-normal);
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-    
+
     .nav-links.active {
         transform: translateY(0);
         opacity: 1;
     }
-    
+
     .name {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.25rem;
     }
-    
+
     .hero-cta {
         flex-direction: column;
         align-items: stretch;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .timeline::before {
         left: 8px;
     }
-    
+
     .timeline-item {
         padding-left: var(--spacing-lg);
     }
-    
+
     .timeline-marker {
         left: 0;
     }
-    
+
     .award-item {
         grid-template-columns: 1fr;
         gap: var(--spacing-sm);
     }
-    
+
     .award-year {
         text-align: left;
         padding-top: 0;
     }
-    
+
     .about-highlights {
         grid-template-columns: 1fr;
     }
-    
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
@@ -1197,15 +1296,15 @@ section {
         width: 150px;
         height: 150px;
     }
-    
+
     .name {
         font-size: 2rem;
     }
-    
+
     .cert-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .education-grid {
         grid-template-columns: 1fr;
     }
