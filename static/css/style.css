@@ -680,6 +680,12 @@ section {
     border-radius: var(--radius-sm);
 }
 
+.status-tag {
+    background: rgba(240, 147, 251, 0.1);
+    color: #f093fb;
+    border-color: rgba(240, 147, 251, 0.3);
+}
+
 .project-card h3 {
     font-size: 1.5rem;
     font-weight: 700;
