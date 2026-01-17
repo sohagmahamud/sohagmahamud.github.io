@@ -1,0 +1,93 @@
+[
+  {
+    "company": "Consultation & Advisory Services",
+    "role": "Independent AI/ML Specialist",
+    "date": "2024 - Present",
+    "description": [
+      "Provide expert guidance on machine learning (ML) and artificial intelligence (AI) solutions to clients across industries",
+      "Custom Development and Implementation: Design, train, and deploy ML models tailored to client needs",
+      "Model Optimization: Designing custom algorithms and frameworks to solve complex business problems",
+      "Ethical AI Practices: Advocate and implement responsible AI practices"
+    ]
+  },
+  {
+    "company": "Shadhin Lab LLC",
+    "role": "Partner Success Manager",
+    "date": "2023 - 2024",
+    "description": [
+      "Managed AWS Partner Network (APN) related activities",
+      "Built and maintained strategic relationships with key partners",
+      "Acted as a trusted advisor, providing tailored guidance and support"
+    ]
+  },
+  {
+    "company": "Creative IT Institute",
+    "role": "Head of Department (Cloud Innovation)",
+    "date": "2022 - 2022",
+    "description": [
+      "Spearheaded the Cloud Innovation department",
+      "Designed and implemented advanced cloud training programs",
+      "Represented the institute at conferences and events"
+    ]
+  },
+  {
+    "company": "Intercloud Limited",
+    "role": "Customer Care Supervisor",
+    "date": "2018 - 2019",
+    "description": [
+      "Supervised a team of customer care representatives, ensuring efficient resolution of client inquiries",
+      "Implemented improved processes and procedures to improve service delivery",
+      "Monitored performance metrics to enhance team productivity"
+    ]
+  },
+  {
+    "company": "Intercloud Limited",
+    "role": "Sr. Officer, Sales & Marketing",
+    "date": "2016 - 2017",
+    "description": [
+      "Developed and executed strategic marketing plans to drive customer acquisition",
+      "Managed key client relationships, ensuring exceptional service",
+      "Conducted market research to identify emerging trends"
+    ]
+  },
+  {
+    "company": "Yes Tech Ltd.",
+    "role": "Founder, CEO",
+    "date": "2014 - 2015",
+    "description": [
+      "Established and led a tech startup specializing in innovative IT solutions",
+      "Oversaw product development, marketing and operations",
+      "Secured partnerships with key stakeholders to expand the business footprint"
+    ]
+  },
+  {
+    "company": "Celcom Axiata Berhad",
+    "role": "Contact Center Consultant",
+    "date": "2010 - 2014",
+    "description": [
+      "Provided direct support to Bangladeshi and international customers via phone and email",
+      "Troubleshot technical issues, offering effective solutions",
+      "Translated technical and localized content for various campaigns"
+    ]
+  },
+  {
+    "company": "Digi Telecommunications Sdn. Bhd.",
+    "role": "Contact Center Consultant",
+    "date": "2009 - 2010",
+    "description": [
+      "Handled incoming and technical issues from Bangladeshi and international clients",
+      "Diagnosed and resolved technical issues, enhancing customer satisfaction",
+      "Translated campaign materials and communication"
+    ]
+  },
+  {
+    "company": "Spectrum Engineering Consortium Ltd.",
+    "role": "System & Network Engineer",
+    "date": "2007 - 2008",
+    "description": [
+      "Designed and implemented secure and scalable IT infrastructure solutions",
+      "Monitored and maintained network performance",
+      "Collaborated with cross-functional teams to troubleshoot system issues"
+    ]
+  }
+]

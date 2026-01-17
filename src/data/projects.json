@@ -1,0 +1,113 @@
+[
+    {
+        "title": "CareerCanvas AI Ecosystem",
+        "category": "ai",
+        "tags": [
+            "Ecosystem",
+            "Agentic AI"
+        ],
+        "problem": "Fragmented career guidance and manual research workflows for students.",
+        "solution": "A unified autonomous platform Providing real-time insights and resource aggregation.",
+        "architecture": "Multi-agent feature builder, n8n-orchestrated aggregation (115+ sources).",
+        "outcome": "Automated entire data lifecycle, reducing manual research overhead by 90%."
+    },
+    {
+        "title": "LangGraph Agent Systems",
+        "category": "ai",
+        "tags": [
+            "AI",
+            "Agentic"
+        ],
+        "problem": "Linear automation failing to handle non-deterministic business decision-making.",
+        "solution": "Custom multi-agent orchestration for autonomous reasoning and corrective loops.",
+        "architecture": "LangGraph, LangChain, State Management.",
+        "outcome": "Agents exceed human-role performance in speed and consistency."
+    },
+    {
+        "title": "Resume Evaluation Agent",
+        "category": "ai",
+        "tags": [
+            "AI",
+            "Automation"
+        ],
+        "description": "Autonomous agent that ingests resumes via Gmail (IMAP), evaluates them using Gemini API, and structures results in Google Sheets."
+    },
+    {
+        "title": "Enterprise Local RAG System",
+        "category": "ai",
+        "tags": [
+            "AI",
+            "Local RAG"
+        ],
+        "problem": "Requirement for document intelligence without public cloud exposure.",
+        "solution": "High-performance, fully offline RAG system for secure processing.",
+        "architecture": "Python, ChromaDB, LangChain; multi-modal ingestion (PDF/DOCX).",
+        "outcome": "Achieved zero-leakage enterprise intelligence with high retrieval accuracy."
+    },
+    {
+        "title": "CloudOps Framework",
+        "category": "infrastructure",
+        "tags": [
+            "AWS",
+            "DevOps"
+        ],
+        "description": "Platform engineering work focusing on secure S3 hosting, migration strategy, and incident response automation."
+    },
+    {
+        "title": "AgriDAO",
+        "category": "blockchain",
+        "tags": [
+            "Blockchain",
+            "AgriTech"
+        ],
+        "description": "Blockchain-based agricultural marketplace and research project (SmartFarmDAO) for decentralized trade.",
+        "link": "https://agridao.cloudninjabd.com"
+    },
+    {
+        "title": "CredChain",
+        "category": "blockchain",
+        "tags": [
+            "Blockchain",
+            "AI"
+        ],
+        "description": "AI + Blockchain credential wallet evolved into a micro-lending concept. Built during a hackathon using Algorand & IPFS."
+    },
+    {
+        "title": "LoanDAO",
+        "category": "blockchain",
+        "tags": [
+            "Web3",
+            "FinTech"
+        ],
+        "description": "Planned blockchain-based micro-lending platform focusing on underserved communities."
+    },
+    {
+        "title": "Content & Event Aggregators",
+        "category": "careercanvas",
+        "tags": [
+            "Automation",
+            "n8n"
+        ],
+        "description": "Automated workflows (n8n) fetching courses (Coursera, etc.), scholarships (115+ sources), and campus events."
+    },
+    {
+        "title": "Monetize the Machine",
+        "category": "writing",
+        "tags": [
+            "AI Book",
+            "Education",
+            "Coming Soon"
+        ],
+        "description": "A Practical Guide to Earning with AI Tools. Empowering readers from zero to infinity in the AI economy."
+    },
+    {
+        "title": "Import–Export Business (Bengali)",
+        "category": "writing",
+        "tags": [
+            "Business",
+            "Trade",
+            "Coming Soon"
+        ],
+        "description": "Comprehensive guide covering Alibaba sourcing, banking, logistics, and risk strategies for international trade."
+    }
+]

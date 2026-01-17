@@ -1,0 +1,38 @@
+[
+    {
+        "year": "2022",
+        "title": "AWS Community Builder (Machine Learning)",
+        "description": "Active contributor to the AWS Community Builder program since Q1 2022.",
+        "icon": "Trophy"
+    },
+    {
+        "year": "2022",
+        "title": "AWS Machine Learning Engineer Scholarship",
+        "description": "Completed the AWS Machine Learning Engineer Scholarship Foundation Course with a Gold Badge.",
+        "icon": "Award"
+    },
+    {
+        "year": "2015",
+        "title": "World Bank ETHOS Graduate",
+        "description": "Completed the ETHOS ICT entrepreneurship training program by The World Bank Group.",
+        "icon": "Globe"
+    },
+    {
+        "year": "2013",
+        "title": "Contact Center Association of Malaysia Award",
+        "description": "CCAM Bronze Award for excellence in the Malaysian National Contact Center Industry.",
+        "icon": "Medal"
+    },
+    {
+        "year": "2003",
+        "title": "Shaheed Ziaur Rahman ICT Scholarship",
+        "description": "National ICT Award recipient.",
+        "icon": "GraduationCap"
+    },
+    {
+        "year": "1993",
+        "title": "Primary Scholarship",
+        "description": "Talent pool scholarship in Class V.",
+        "icon": "Star"
+    }
+]

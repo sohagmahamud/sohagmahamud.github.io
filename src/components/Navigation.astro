@@ -1,0 +1,76 @@
+---
+const links = [
+  { name: "About", href: "#about" },
+  { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
+  { name: "Speaking", href: "#speaking" },
+  { name: "Skills", href: "#skills" },
+  { name: "Contact", href: "#contact" },
+];
+---
+
+<nav
+  class="fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 w-[90%] md:w-auto"
+>
+  <div
+    class="glass-card px-6 py-3 flex items-center justify-between md:justify-center gap-8 shadow-2xl shadow-purple-500/10"
+  >
+    <div
+      class="md:hidden font-black text-xl bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent"
+    >
+      Sohag
+    </div>
+
+    <div class="hidden md:flex items-center gap-12">
+      <div
+        class="font-black text-xl bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent"
+      >
+        Sohag_
+      </div>
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class="text-sm font-semibold text-slate-400 hover:text-white transition-colors tracking-wide"
+          >
+            {link.name}
+          </a>
+        ))
+      }
+    </div>
+
+    <div class="flex md:hidden">
+      <!-- Simple mobile menu placeholder -->
+      <div class="w-6 h-6 flex flex-col justify-center gap-1.5 cursor-pointer">
+        <div class="h-0.5 w-full bg-slate-400"></div>
+        <div class="h-0.5 w-full bg-slate-400"></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Navbar scroll effect
+  const nav = document.querySelector("nav");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      nav?.classList.remove("top-6");
+      nav?.classList.add(
+        "top-0",
+        "w-full",
+        "rounded-none",
+        "border-x-0",
+        "border-t-0",
+      );
+    } else {
+      nav?.classList.add("top-6");
+      nav?.classList.remove(
+        "top-0",
+        "w-full",
+        "rounded-none",
+        "border-x-0",
+        "border-t-0",
+      );
+    }
+  });
+</script>

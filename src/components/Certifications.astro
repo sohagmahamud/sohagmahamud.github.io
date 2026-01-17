@@ -1,0 +1,37 @@
+---
+import certsData from "../data/certifications.json";
+import * as Icons from "lucide-react";
+
+const icons = Icons;
+---
+
+<section id="certifications" class="py-24">
+    <div class="container mx-auto px-6">
+        <h2 class="section-title">Professional Certifications</h2>
+
+        <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto"
+        >
+            {
+                certsData.map((cert) => {
+                    const Icon = (icons as any)[cert.icon] || icons.Award;
+                    return (
+                        <div class="glass-card p-4 flex gap-4 items-center group hover:bg-white/10">
+                            <div class="p-2 bg-purple-500/10 rounded-lg shrink-0">
+                                <Icon className="w-6 h-6 text-purple-400" />
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-bold text-white line-clamp-2 leading-tight group-hover:text-purple-300 transition-colors">
+                                    {cert.name}
+                                </h3>
+                                <p class="text-[10px] text-slate-500 uppercase tracking-widest mt-1 font-semibold">
+                                    {cert.issuer}
+                                </p>
+                            </div>
+                        </div>
+                    );
+                })
+            }
+        </div>
+    </div>
+</section>

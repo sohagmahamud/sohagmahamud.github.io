@@ -1,0 +1,41 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Senior AI Engineer & Agent Architect Portfolio",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | Md. Mahamudur Rahman (Sohag Mahamud)</title>
+    <meta
+      name="description"
+      content={description + " - Md. Mahamudur Rahman (Sohag Mahamud)"}
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen">
+    <div
+      class="fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-black"
+    >
+    </div>
+    <slot />
+  </body>
+</html>
