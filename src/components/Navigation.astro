@@ -1,5 +1,6 @@
 ---
 const links = [
+  { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
@@ -15,18 +16,20 @@ const links = [
   <div
     class="glass-card px-6 py-3 flex items-center justify-between md:justify-center gap-8 shadow-2xl shadow-purple-500/10"
   >
-    <div
+    <a
+      href="#home"
       class="md:hidden font-black text-xl bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent"
     >
       Sohag
-    </div>
+    </a>
 
-    <div class="hidden md:flex items-center gap-12">
-      <div
-        class="font-black text-xl bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent"
+    <div class="hidden md:flex items-center gap-10">
+      <a
+        href="#home"
+        class="font-black text-xl bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent hover:scale-110 transition-transform"
       >
         Sohag_
-      </div>
+      </a>
       {
         links.map((link) => (
           <a
