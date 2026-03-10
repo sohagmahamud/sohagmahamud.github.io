@@ -1,0 +1,30 @@
+[
+    {
+        "school": "Prime University",
+        "degree": "B.Sc. in Computer Science & Engineering",
+        "year": "2011",
+        "gpa": "CGPA: 3.50",
+        "icon": "GraduationCap"
+    },
+    {
+        "school": "Faridpur Polytechnic Institute",
+        "degree": "Diploma in Computer Engineering",
+        "year": "2006",
+        "gpa": "CGPA: 2.99",
+        "icon": "School"
+    },
+    {
+        "school": "Shah Mahmudia College",
+        "degree": "H.S.C in Science",
+        "year": "2001",
+        "gpa": "2nd Division (54.9%)",
+        "icon": "Book"
+    },
+    {
+        "school": "Govt. K.G. Union Secondary School",
+        "degree": "S.S.C in Science",
+        "year": "1999",
+        "gpa": "1st Division * (78.4%)",
+        "icon": "BookOpen"
+    }
+]

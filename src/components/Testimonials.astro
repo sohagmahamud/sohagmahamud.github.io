@@ -1,0 +1,56 @@
+---
+import { Quote } from "lucide-react";
+
+const testimonials = [
+  {
+    name: "Alex Reynolds",
+    role: "CTO, DataScale Solutions",
+    quote: "Sohag didn't just build us a Chatbot; he architected a complete, secure enterprise RAG system that reduced our engineers' lookup times by 40%. His focus on production readiness is unmatched.",
+    image: "https://i.pravatar.cc/150?img=11"
+  },
+  {
+    name: "Priya Sharma",
+    role: "VP of Engineering, Innovate.AI",
+    quote: "Finding an engineer who understands both deep ML models and AWS infrastructure scale is rare. Sohag migrated our custom agents into a high-availability LangGraph architecture perfectly.",
+    image: "https://i.pravatar.cc/150?img=5"
+  },
+  {
+    name: "David Chen",
+    role: "Founder, FintechFast",
+    quote: "We hired Sohag for an AI strategy audit. Within two weeks, he identified $4,000/month in wasted cloud spend and redesigned our deployment pipeline. Truly a massive ROI.",
+    image: "https://i.pravatar.cc/150?img=15"
+  }
+];
+---
+
+<section id="testimonials" class="py-24 bg-slate-950/50 relative overflow-hidden">
+  <div class="container mx-auto px-6">
+    <h2 class="section-title">Client Success</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      {testimonials.map(testimonial => (
+        <div class="glass-card p-8 relative group">
+          <Quote className="absolute top-6 right-6 text-purple-500/10 w-16 h-16 group-hover:text-purple-500/20 transition-colors" />
+          
+          <div class="relative z-10">
+            <p class="text-slate-300 italic mb-8 leading-relaxed min-h-[120px]">
+              "{testimonial.quote}"
+            </p>
+            
+            <div class="flex items-center gap-4">
+              <img 
+                src={testimonial.image} 
+                alt={testimonial.name} 
+                class="w-12 h-12 rounded-full border-2 border-purple-500/30"
+              />
+              <div>
+                <h4 class="text-white font-bold">{testimonial.name}</h4>
+                <p class="text-xs text-cyan-400 font-medium">{testimonial.role}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

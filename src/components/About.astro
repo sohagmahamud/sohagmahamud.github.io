@@ -1,0 +1,46 @@
+---
+const highlights = [
+  { label: "Years of Experience", value: "15+", icon: "Award" },
+  { label: "Certifications", value: "20+", icon: "Shield" },
+  { label: "Awards & Honors", value: "8+", icon: "Trophy" },
+  { label: "Community", value: "Leader", icon: "Users" },
+];
+---
+
+<section id="about" class="py-24 bg-slate-950/50 relative overflow-hidden">
+  <div class="container mx-auto px-6">
+    <h2 class="section-title">About Me</h2>
+    
+    <div class="max-w-4xl mx-auto">
+      <div class="glass-card p-8 md:p-12 mb-12">
+        <p class="text-xl text-slate-300 mb-6 leading-relaxed">
+          I am an Independent AI Consultant and Agent Architect specializing in the design, deployment,
+          and strategic execution of production-grade autonomous systems. With over 15 years of engineering experience,
+          I partner with businesses to bridge the gap between advanced AI research and operational stability,
+          focusing on delivering tangible ROI.
+        </p>
+        <p class="text-slate-400 mb-6 leading-relaxed">
+          Through my AI Consultancy services, I actively guide clients across the entire lifecycle of AI systems—from
+          strategic roadmap planning, Infrastructure-as-Code, and MLOps to cost optimization and responsible AI governance.
+          My expertise enables enterprises to architect robust multi-agent systems, optimize precise RAG pipelines, 
+          and scale LLM platforms confidently on AWS.
+        </p>
+        <p class="text-slate-400 leading-relaxed font-medium text-slate-300">
+          Whether you need a comprehensive AI strategy audit, custom agent development, or scalable infrastructure design,
+          I prioritize engineering reliability, observable architectures, and real business outcomes over experimental demos.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        {highlights.map(item => (
+          <div class="glass-card p-6 text-center group cursor-default">
+            <div class="text-3xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform">
+              {item.value}
+            </div>
+            <div class="text-sm text-slate-500 uppercase tracking-widest font-semibold">{item.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

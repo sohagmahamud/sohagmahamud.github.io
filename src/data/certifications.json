@@ -1,0 +1,82 @@
+[
+    {
+        "name": "AWS Certified Cloud Practitioner",
+        "issuer": "Amazon Web Services",
+        "icon": "Aws"
+    },
+    {
+        "name": "AWS Certified Machine Learning - Specialty",
+        "issuer": "Amazon Web Services",
+        "icon": "Aws"
+    },
+    {
+        "name": "AI CERTs® Certified Trainer™",
+        "issuer": "AI CERTs®",
+        "icon": "Award"
+    },
+    {
+        "name": "AI+ Executive™",
+        "issuer": "AI CERTs®",
+        "icon": "Bot"
+    },
+    {
+        "name": "AI+ Prompt Engineer™",
+        "issuer": "AI CERTs®",
+        "icon": "Brain"
+    },
+    {
+        "name": "Introduction to Quantum Computing",
+        "issuer": "The Coding School",
+        "icon": "Atom"
+    },
+    {
+        "name": "Data Center Virtualization and Cloud Computing Infrastructure",
+        "issuer": "BdREN",
+        "icon": "Database"
+    },
+    {
+        "name": "Introduction to Big Data and Hadoop",
+        "issuer": "BdREN",
+        "icon": "Network"
+    },
+    {
+        "name": "Practical Cryptography",
+        "issuer": "BdREN",
+        "icon": "Lock"
+    },
+    {
+        "name": "Ethical Hacking",
+        "issuer": "BdREN",
+        "icon": "ShieldAlert"
+    },
+    {
+        "name": "AWS Partner Accreditation (Technical)",
+        "issuer": "AWS",
+        "icon": "Aws"
+    },
+    {
+        "name": "AWS Partner Sales Accreditation (Business)",
+        "issuer": "AWS",
+        "icon": "Aws"
+    },
+    {
+        "name": "AWS Partner Migration Ambassador 2023",
+        "issuer": "AWS",
+        "icon": "Aws"
+    },
+    {
+        "name": "AWS Partner Generative AI Essentials",
+        "issuer": "AWS",
+        "icon": "Aws"
+    },
+    {
+        "name": "AWS Partner Cloud Economics Accreditation",
+        "issuer": "AWS",
+        "icon": "Aws"
+    },
+    {
+        "name": "Generative AI with Large Language Models",
+        "issuer": "DeepLearning.AI",
+        "icon": "MessageSquare"
+    }
+]

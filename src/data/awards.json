@@ -1,0 +1,40 @@
+[
+    {
+        "year": "2022",
+        "title": "AWS Community Builder (Machine Learning)",
+        "description": "The AWS Community Builders program offers technical resources, mentorship, and networking opportunities to AWS technical enthusiasts and emerging thought leaders. Active contributor since Q1 2022.",
+        "icon": "Trophy",
+        "image": "/images/community-builder.png"
+    },
+    {
+        "year": "2022",
+        "title": "AWS Machine Learning Engineer Scholarship",
+        "description": "Completed the AWS Machine Learning Engineer Scholarship Foundation Course with a Gold Badge.",
+        "icon": "Award",
+        "image": "/images/ml-engineer-scholarship.jpg"
+    },
+    {
+        "year": "2015",
+        "title": "World Bank ETHOS Graduate",
+        "description": "Completed the ETHOS ICT entrepreneurship training program by The World Bank Group in association with SUNY Korea and NIPA. This 21-day program, held at the SUNY Korea Campus, included intensive sessions and tours of the Korean IT Industry and government agencies promoting ICT.",
+        "icon": "Globe",
+        "image": "/images/ETHOS-graduation.jpg"
+    },
+    {
+        "year": "2013",
+        "title": "Contact Center Association of Malaysia Award",
+        "description": "CCAM Bronze Award for excellence in the Malaysian National Contact Center Industry.",
+        "icon": "Medal",
+        "images": [
+            "/images/ccam-award.jpg",
+            "/images/ccam-award-2.jpg"
+        ]
+    },
+    {
+        "year": "2003",
+        "title": "Shaheed Ziaur Rahman ICT Scholarship",
+        "description": "National ICT Award received from the Honorable Prime Minister Begum Khaleda Zia in September 2004.",
+        "icon": "GraduationCap",
+        "image": "/images/ict-scholarship.jpg"
+    }
+]

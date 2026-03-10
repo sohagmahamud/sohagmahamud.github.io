@@ -1,0 +1,83 @@
+---
+import { BookOpen, ExternalLink, PenTool } from "lucide-react";
+
+const writings = [
+  {
+    title: "Monetize the Machine",
+    category: "Upcoming Book",
+    status: "Drafting",
+    description: "A Practical Guide to Earning with AI Tools. Empowering readers from zero to infinity in the AI economy, focusing on actionable strategies over theory.",
+    link: "#",
+    icon: "BookOpen"
+  },
+  {
+    title: "Import–Export Business (Bengali)",
+    category: "Upcoming Book",
+    status: "Editing",
+    description: "Comprehensive guide covering Alibaba sourcing, banking, logistics, and risk strategies for international trade for the Bangladeshi market.",
+    link: "#",
+    icon: "BookOpen"
+  },
+  {
+    title: "Designing Production-Ready RAG Strategies",
+    category: "Article",
+    status: "Published",
+    description: "An analysis of why local vector databases fail in production and how to orchestrate multi-agent retrieval systems on AWS.",
+    link: "#",
+    icon: "PenTool"
+  }
+];
+
+const icons = { BookOpen, PenTool };
+---
+
+<section id="writings" class="py-24 relative overflow-hidden">
+  <div class="container mx-auto px-6">
+    <div class="flex justify-between items-end mb-12">
+      <h2 class="text-3xl md:text-5xl font-black bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
+        Thought Leadership
+      </h2>
+      <a href="#contact" class="hidden md:flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors font-medium">
+        Subscribe to Newsletter <ExternalLink size={16} />
+      </a>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      {writings.map(item => {
+        const Icon = (icons as any)[item.icon] || icons.BookOpen;
+        return (
+          <div class="glass-card flex flex-col h-full group">
+            <div class="p-6 border-b border-white/5 flex justify-between items-center">
+              <span class="text-xs font-bold uppercase tracking-widest text-slate-500">{item.category}</span>
+              <span class={`text-[10px] font-bold uppercase px-2 py-1 rounded-full ${
+                item.status === 'Published' 
+                  ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' 
+                  : 'bg-amber-500/10 text-amber-400 border border-amber-500/20'
+              }`}>
+                {item.status}
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-purple-500/20 transition-all">
+                <Icon size={20} className="text-slate-400 group-hover:text-purple-400 transition-colors" />
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                {item.title}
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                {item.description}
+              </p>
+              
+              <a 
+                href={item.link} 
+                class="inline-flex items-center gap-2 text-sm font-bold text-slate-300 hover:text-white transition-colors mt-auto"
+              >
+                Read More <ExternalLink size={14} />
+              </a>
+            </div>
+          </div>
+        )
+      })}
+    </div>
+  </div>
+</section>

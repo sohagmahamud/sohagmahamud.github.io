@@ -1,0 +1,60 @@
+[
+    {
+        "type": "Technical Talk",
+        "title": "AWS re:Invent re:Cap Bangladesh",
+        "topic": "Latest Innovations from AWS re:Invent. Led an engaging hands-on session, where participants collaboratively built an application using Kiro, transforming theory into practical experience.",
+        "date": "31 January 2026",
+        "location": "Best Western Mapple Leaf, Dhaka",
+        "image": "/images/re-invent-re-cap.jpg"
+    },
+    {
+        "type": "Technical Talk",
+        "title": "AWS Community Day Bangladesh 2025",
+        "topic": "Building Next-Gen Generative AI Solutions: Deep Dive into Amazon Bedrock, Nova, and Agentic AI",
+        "date": "December 2025",
+        "location": "Brac University",
+        "image": "/images/community-day-25.jpg"
+    },
+    {
+        "type": "Technical Talk",
+        "title": "AWS Cloud Day Bangladesh",
+        "topic": "Unleashing Creativity: Exploring Machine Learning, Generative AI, and Amazon SageMaker Canvas",
+        "date": "June 2023",
+        "location": "Daffodil International University",
+        "images": [
+            "/images/cloud-day-23.jpg",
+            "/images/cloud-day-23-1.jpg",
+            "/images/cloud-day-23-2.jpg"
+        ]
+    },
+    {
+        "type": "Seminar",
+        "title": "University of Dhaka",
+        "topic": "Career on Data Science",
+        "date": "May 2022",
+        "location": "Department of Statistics"
+    },
+    {
+        "type": "Career Talk",
+        "title": "Daffodil International University-DIU",
+        "topic": "Explore Your Career with Cloud Computing",
+        "date": "May 2022",
+        "location": "DIU Campus",
+        "images": [
+            "/images/DIU-1.png",
+            "/images/DIU-2.png"
+        ]
+    },
+    {
+        "type": "Workshop",
+        "title": "Youth School for Social Entrepreneurs",
+        "topic": "Self Development Workshop",
+        "date": "April 2015",
+        "location": "EMK Center, Dhaka",
+        "images": [
+            "/images/self-development-workshop-1.jpg",
+            "/images/self-development-workshop-2.jpg",
+            "/images/self-development-workshop-3.jpg"
+        ]
+    }
+]

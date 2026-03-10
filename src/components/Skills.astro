@@ -1,0 +1,45 @@
+---
+import skillsData from '../data/skills.json';
+import * as Icons from 'lucide-react';
+
+const icons = Icons;
+---
+
+<section id="skills" class="py-24 bg-slate-950/50">
+  <div class="container mx-auto px-6">
+    <h2 class="section-title">Technical Expertise</h2>
+    
+    <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      {skillsData.map(category => (
+        <div class="glass-card p-8">
+          <div class="flex items-center gap-4 mb-8">
+            <div class="p-3 bg-purple-500/10 rounded-xl border border-purple-500/20">
+              {(() => {
+                const Icon = (icons as any)[category.icon] || icons.Code;
+                return <Icon className="w-6 h-6 text-purple-400" />;
+              })()}
+            </div>
+            <h3 class="text-2xl font-bold text-white">{category.category}</h3>
+          </div>
+          
+          <div class="space-y-6">
+            {category.skills.map(skill => (
+              <div>
+                <div class="flex justify-between items-end mb-2">
+                  <span class="font-medium text-slate-200">{skill.name}</span>
+                  <span class="text-xs font-bold text-purple-400 uppercase tracking-widest">{skill.level}</span>
+                </div>
+                <div class="h-2 w-full bg-white/5 rounded-full overflow-hidden border border-white/5">
+                  <div 
+                    class="h-full bg-gradient-to-r from-purple-600 to-cyan-500 rounded-full" 
+                    style={`width: ${skill.progress}%`}
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

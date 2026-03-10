@@ -1,0 +1,65 @@
+[
+    {
+        "category": "Agentic AI & LLMs",
+        "icon": "Bot",
+        "skills": [
+            {
+                "name": "Agent Orchestration (LangGraph, LangChain)",
+                "level": "Expert",
+                "progress": 95
+            },
+            {
+                "name": "RAG Architecture & Prompt Engineering",
+                "level": "Expert",
+                "progress": 92
+            },
+            {
+                "name": "Foundation Models (Bedrock, Gemini, GPT-4)",
+                "level": "Advanced",
+                "progress": 90
+            }
+        ]
+    },
+    {
+        "category": "Production ML (MLOps)",
+        "icon": "Cpu",
+        "skills": [
+            {
+                "name": "ML Lifecycle (SageMaker, MLflow)",
+                "level": "Expert",
+                "progress": 92
+            },
+            {
+                "name": "CI/CD for AI & Model Monitoring",
+                "level": "Advanced",
+                "progress": 88
+            },
+            {
+                "name": "Docker, Kubernetes & Scalable Serving",
+                "level": "Advanced",
+                "progress": 85
+            }
+        ]
+    },
+    {
+        "category": "Cloud-Native Architecture",
+        "icon": "Cloud",
+        "skills": [
+            {
+                "name": "AWS Services (EKS, Lambda, S3, RDS)",
+                "level": "Expert",
+                "progress": 94
+            },
+            {
+                "name": "Infrastructure as Code (Terraform)",
+                "level": "Advanced",
+                "progress": 87
+            },
+            {
+                "name": "Distributed Systems & Microservices",
+                "level": "Advanced",
+                "progress": 85
+            }
+        ]
+    }
+]

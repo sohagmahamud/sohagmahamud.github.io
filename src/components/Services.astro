@@ -1,0 +1,115 @@
+---
+import { Briefcase, Boxes, Server, Cpu, Blocks, Network } from "lucide-react";
+
+const services = [
+  {
+    title: "Strategic AI Audit",
+    description: "Deep-dive analysis of your current stack to identify $10k+ monthly cost-saving opportunities, security vulnerabilities, and high-impact automation quick-wins.",
+    icon: "Briefcase"
+  },
+  {
+    title: "Agentic Workflows",
+    description: "Architecting goal-driven autonomous agents using LangGraph and Nova that reason, plan, and execute multi-step enterprise operations with zero manual touch.",
+    icon: "Blocks"
+  },
+  {
+    title: "Enterprise Governance",
+    description: "Implementing robust AI risk management, safety guardrails, and audit trails to ensure compliance with global standards and data privacy laws.",
+    icon: "Cpu"
+  },
+  {
+    title: "Secure Data Sovereignty",
+    description: "Designing fully offline, local-first RAG systems or VPC-isolated LLM deployments to ensure your sensitive proprietary data never leaves your environment.",
+    icon: "Boxes"
+  },
+  {
+    title: "Multimodal Intelligence",
+    description: "Beyond text: Architecting systems that process video, audio, and sensor data for real-time predictive and prescriptive intelligence.",
+    icon: "Network"
+  },
+  {
+    title: "ROI Architecture",
+    description: "Bridge the GenAI Divide. Designing highly-instrumented AI systems with clear attribution to transform experimental pilots into measurable bottom-line value.",
+    icon: "Server"
+  }
+];
+
+const icons = { Briefcase, Boxes, Server, Cpu, Blocks, Network };
+---
+
+<section id="services" class="py-24 relative overflow-hidden bg-slate-950/20">
+  <!-- Subtle Background Accents -->
+  <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-500/5 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+  <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-500/5 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="max-w-3xl mb-16">
+      <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter text-white">
+        Consultancy & <span class="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Strategic Support</span>
+      </h2>
+      <p class="text-xl text-slate-400 leading-relaxed font-medium">
+        Bridging the gap between raw AI research and operational excellence through a structured, ROI-focused approach — supporting both high-growth startups and global enterprises.
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+      {services.map((service, index) => {
+        const Icon = (icons as any)[service.icon] || icons.Briefcase;
+        return (
+          <div class="glass-card p-8 group hover:bg-white/[0.03] transition-all relative overflow-hidden border-white/5 hover:border-purple-500/30">
+            <div class="absolute -right-4 -top-4 w-24 h-24 bg-gradient-to-br from-purple-500/5 to-transparent rounded-full blur-2xl group-hover:bg-purple-500/10 transition-colors"></div>
+            
+            <div class="w-12 h-12 rounded-xl bg-slate-900 flex items-center justify-center mb-8 border border-white/10 group-hover:scale-110 transition-transform">
+              <Icon size={24} className="text-purple-400 group-hover:text-cyan-400 transition-colors" />
+            </div>
+            
+            <h3 class="text-xl font-bold text-white mb-4 leading-tight group-hover:text-purple-400 transition-colors">
+              {service.title}
+            </h3>
+            
+            <p class="text-slate-500 text-sm leading-relaxed group-hover:text-slate-400 transition-colors">
+              {service.description}
+            </p>
+            
+            <div class="mt-8 pt-6 border-t border-white/5 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+              <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Enquire</span>
+              <div class="w-8 h-[1px] bg-purple-500/50"></div>
+            </div>
+          </div>
+        )
+      })}
+    </div>
+
+    <!-- The Method Section -->
+    <div class="glass-card p-1 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/5">
+      <div class="bg-slate-950 rounded-[22px] p-8 md:p-12">
+        <div class="grid md:grid-cols-3 gap-12 items-center">
+          <div class="md:col-span-1 border-r border-white/5 md:pr-12">
+            <div class="text-[10px] font-black text-purple-400 uppercase tracking-[0.4em] mb-4">The Methodology</div>
+            <h3 class="text-3xl font-bold text-white mb-6">Discovery to Deployment</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Every project follows a precise 3-step execution framework to ensure reliability and measurable impact.
+            </p>
+          </div>
+          <div class="md:col-span-2 grid sm:grid-cols-3 gap-8">
+            <div class="space-y-4">
+              <div class="w-10 h-10 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-400 font-bold border border-purple-500/20">1</div>
+              <h4 class="text-white font-bold text-sm uppercase tracking-wider">Audit & Impact</h4>
+              <p class="text-slate-500 text-xs leading-relaxed">Quantifying technical debt and mapping AI to specific business KPIs.</p>
+            </div>
+            <div class="space-y-4">
+              <div class="w-10 h-10 rounded-full bg-cyan-500/10 flex items-center justify-center text-cyan-400 font-bold border border-cyan-500/20">2</div>
+              <h4 class="text-white font-bold text-sm uppercase tracking-wider">Architecture</h4>
+              <p class="text-slate-500 text-xs leading-relaxed">Designing resilient, security-hardened systems for enterprise scale.</p>
+            </div>
+            <div class="space-y-4">
+              <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400 font-bold border border-emerald-500/20">3</div>
+              <h4 class="text-white font-bold text-sm uppercase tracking-wider">Hardening</h4>
+              <p class="text-slate-500 text-xs leading-relaxed">Operationalizing with full observability, CI/CD, and ROI validation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
